@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mobile Legends Heroes</title>
+  <title>Mobile Legends - Hero Search</title>
   <link rel="stylesheet" href="style.css">
-  <script src="ml.js" defer></script>
 </head>
 <body>
 
-  <header>
-    <h1>Mobile Legends Heroes</h1>
-    <p>Search for your favorite heroes and get strategies!</p>
-  </header>
+  <h1>Mobile Legends - Search Hero</h1>
+  <input type="text" id="heroSearch" placeholder="Type hero name...">
+  <div id="suggestions"></div>
 
-  <!-- Search Bar Section -->
-  <div id="search-section">
-    <input type="text" id="search-bar" placeholder="Search for a hero..." />
-    <ul id="suggestions-list"></ul>
-  </div>
+  <a href="index.html">Back to Main Page</a>
 
-  <a href="index.html" id="back-home">Back to Home</a>
+  <script src="script.js"></script>
+  <script>
+    // Load Mobile Legends heroes only
+    const heroes = [
+      { name: "Alucard", page: "heroes/ml/alucard.html" },
+      { name: "Layla", page: "heroes/ml/layla.html" },
+      { name: "Zilong", page: "heroes/ml/zilong.html" }
+    ];
+    initSearch(heroes);
+  </script>
 
 </body>
 </html>
