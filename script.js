@@ -1,26 +1,4 @@
 // For index.html buttons
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Game Heroes Hub</title>
-  <link rel="stylesheet" href="style-main.css">
-</head>
-<body>
-
-  <h1>Game Heroes Hub</h1>
-  <p>Heroes info and strategy from multiple games in an interactive web page.</p>
-
-  <h3>About This Site</h3>
-  <p>Welcome to Game Heroes Hub! Here you’ll find tips, strategies, and guides for a variety of games.</p>
-
-  <h2>Choose a Game</h2>
-  <button id="mlBtn" class="game-btn" onclick="goToGame('ml')">MOBILE LEGENDS</button>
-  <button id="hokBtn" class="game-btn" onclick="goToGame('hok')">HONOR OF KINGS</button>
-
-  <script src="script.js"></script>
-</body>
-</html>
-
 function goToGame(game) {
   const btnId = game + 'Btn';
   const btn = document.getElementById(btnId);
