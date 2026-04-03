@@ -1,1 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Honor of Kings - Hero Search</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <h1>Honor of Kings - Search Hero</h1>
+  <input type="text" id="heroSearch" placeholder="Type hero name...">
+  <div id="suggestions"></div>
+
+  <a href="index.html">Back to Main Page</a>
+
+  <script src="script.js"></script>
+  <script>
+    // Load Honor of Kings heroes only
+    const heroes = [
+      { name: "Sun", page: "heroes/hok/sun.html" },
+      { name: "Zilong", page: "heroes/hok/zilong.html" }
+    ];
+    initSearch(heroes);
+  </script>
+
+</body>
+</html>
