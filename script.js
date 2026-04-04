@@ -14,26 +14,37 @@ function goToGame(game) {
 
 // For ml.html and hok.html - initialize hero search and suggestion
 function initSearch(heroes) {
-  const searchInput = document.getElementById('heroSearch');
-  const suggestionsDiv = document.getElementById('suggestions');
+  const input = document.getElementById('heroSearch');
+  const suggestions = document.getElementById('suggestions');
 
-  searchInput.addEventListener('input', () => {
-    const query = searchInput.value.toLowerCase();
-    suggestionsDiv.innerHTML = '';
+  input.addEventListener('input', () => {
+    const query = input.value.toLowerCase();
+    suggestions.innerHTML = '';
+
     if (query.length === 0) return;
 
-    const matched = heroes.filter(h => h.name.toLowerCase().includes(query));
+    const matched = heroes.filter(h => 
+      h.official.toLowerCase().includes(query) || 
+      h.nickname.toLowerCase().includes(query)
+    );
+
     matched.forEach(hero => {
       const div = document.createElement('div');
-      div.textContent = hero.name;
-      div.classList.add('suggestion');
+      div.textContent = `${hero.official} (${hero.nickname})`;
+      div.classList.add('suggestion-item');
+      div.style.cursor = 'pointer';
+
       div.addEventListener('click', () => {
+        input.value = hero.official;
+        suggestions.innerHTML = '';
+        // Navigate to hero page
         window.location.href = hero.page;
       });
-      suggestionsDiv.appendChild(div);
+
+      suggestions.appendChild(div);
     });
   });
-
+}
   searchInput.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
       const hero = heroes.find(h => h.name.toLowerCase() === searchInput.value.toLowerCase());
