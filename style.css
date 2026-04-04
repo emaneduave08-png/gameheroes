@@ -2,12 +2,10 @@
 html, body {
   height: 100%;
   margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  color: #fff;
-  text-align: center;
+  display: flex;
   justify-content: center;  /* horizontal center */
-  align-items: center;      /* vertical center */  
+  align-items: center;      /* vertical center */
+  font-family: Arial, sans-serif;
 }
 
 /* DARK OVERLAY para laging kita text */
