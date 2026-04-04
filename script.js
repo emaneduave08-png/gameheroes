@@ -33,7 +33,34 @@ function initSearch(heroes) {
       suggestionsDiv.appendChild(div);
     });
   });
+  
+function initSearch(heroes) {
+  const input = document.getElementById('heroSearch');
+  const suggestions = document.getElementById('suggestions');
 
+  input.addEventListener('input', () => {
+    const query = input.value.toLowerCase();
+    suggestions.innerHTML = '';
+
+    if (!query) return;
+
+    const results = heroes.filter(h =>
+      h.official.toLowerCase().includes(query) ||
+      h.nickname.toLowerCase().includes(query)
+    );
+
+    results.forEach(hero => {
+      const div = document.createElement('div');
+      div.textContent = `${hero.official} (${hero.nickname})`;
+
+      div.onclick = () => {
+        window.location.href = hero.page;
+      };
+
+      suggestions.appendChild(div);
+    });
+  });
+}
   searchInput.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
       const hero = heroes.find(h => h.name.toLowerCase() === searchInput.value.toLowerCase());
