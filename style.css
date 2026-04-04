@@ -76,6 +76,14 @@ button.game-btn.active {
   transform: scale(1.2);
 }
 
+/* Container ng buttons */
+.button-container {
+  display: flex;
+  justify-content: center;  /* center horizontally */
+  align-items: center;
+  flex-wrap: wrap;          /* para responsive */
+}
+
 /* Search input */
 #heroSearch {
   width: 300px;
