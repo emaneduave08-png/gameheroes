@@ -12,12 +12,22 @@
 
   <a href="index.html">Back to Main Page</a>
 
-  <script src="script.js"></script>
-  <script>
+ <script src="data/heroes.js"></script>
+<script src="script.js"></script>
+<script>
+  initSearch(heroes);
+</script>
     // Load Honor of Kings heroes only
-    const heroes = [
-      { name: "Sun", page: "heroes/hok/sun.html" },
-      { name: "Zilong", page: "heroes/hok/zilong.html" }
+    const heroes =<script>
+  const heroes = [
+    { official: "Miyamoto Musashi", nickname: "Swordmaster", page: "heroes/hok/miyamoto.html" },
+    { official: "Zhang Fei", nickname: "Shield Tank", page: "heroes/hok/zhangfei.html" },
+    { official: "Daji", nickname: "Fox Sorceress", page: "heroes/hok/daji.html" },
+    { official: "Wang Zhaojun", nickname: "Ice Mage", page: "heroes/hok/wangzhaojun.html" },
+    { official: "Gongsun Li", nickname: "Agile Marksman", page: "heroes/hok/gongsunli.html" }
+  ];
+  initSearch(heroes);
+</script>
     ];
     initSearch(heroes);
   </script>
