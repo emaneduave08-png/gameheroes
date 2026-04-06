@@ -1,54 +1,146 @@
-/* Mobile Legends Page Design */
-body {
-  background-color: #1a1a1a;
+/* Base */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
   color: #fff;
-  font-family: 'Segoe UI', sans-serif;
   text-align: center;
-  padding: 20px;
 }
 
+/* DARK OVERLAY para laging kita text */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* adjust mo 0.4–0.7 */
+  z-index: -1;
+}
+
+/* HEADER BOX */
+.header-box {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 15px 25px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+/* TITLE */
 h1 {
-  color: #ff9900;
-  font-size: 36px;
+  font-size: 50px;
+  color: #00aaff;
+  text-shadow: 3px 3px 6px black, 0 0 10px #000;
+  margin: 0;
 }
 
-input#heroSearch {
+/* SUBTITLE */
+h2 {
+  font-size: 28px;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px black;
+}
+
+/* PARAGRAPH */
+p {
+  font-size: 18px;
+  color: #eeeeee;
+  text-shadow: 1px 1px 4px black;
+}
+
+/* Buttons */
+button.game-btn {
+  padding: 20px 40px;
+  margin: 10px;
+  font-size: 22px;
+  cursor: pointer;
+  border-radius: 12px;
+  border: 2px solid #ff6600;
+  transition: all 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ff6600;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px black;
+}
+
+button.game-btn:hover {
+  background-color: #ff6600;
+  color: white;
+  transform: scale(1.1);
+}
+
+button.game-btn.active {
+  transform: scale(1.2);
+}
+
+/* Container ng buttons */
+.button-container {
+  display: flex;
+  justify-content: center;  /* center horizontally */
+  align-items: center;
+  flex-wrap: wrap;          /* para responsive */
+}
+
+/* Search input */
+#heroSearch {
+  width: 300px;
   padding: 10px;
   font-size: 16px;
-  width: 300px;
-  border-radius: 6px;
-  border: 2px solid #ff9900;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: none;
   outline: none;
-  margin-bottom: 10px;
 }
 
+/* Suggestions dropdown */
 #suggestions {
-  background: #333;
+  border: 1px solid #ccc;
   max-width: 300px;
+  background: white;
   margin: 0 auto;
-  border-radius: 6px;
   text-align: left;
-  color: #fff;
+  color: black;
+  max-height: 150px;
+  overflow-y: auto;
+  border-radius: 5px;
 }
 
 .suggestion {
   padding: 8px 10px;
   cursor: pointer;
-  border-bottom: 1px solid #555;
+  border-bottom: 1px solid #ddd;
 }
 
 .suggestion:hover {
-  background-color: #ff9900;
-  color: #111;
+  background-color: #eee;
 }
 
+/* Links */
 a {
-  color: #ff9900;
+  color: #ccc;
+  text-decoration: none;
   display: inline-block;
   margin-top: 20px;
-  text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+/* Info overlay sa ibaba */
+.info-overlay {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 25vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  text-align: left;
 }
