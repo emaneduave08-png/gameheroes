@@ -8,6 +8,16 @@ html, body {
   text-align: center;
 }
 
+    <style>
+    {
+  background-image: url('images/ml.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+</style>
+
 /* DARK OVERLAY para laging kita text */
 body::before {
   content: "";
