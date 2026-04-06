@@ -7,16 +7,17 @@ html, body {
   color: #fff;
   text-align: center;
 }
+body {
+  margin: 0;
+  height: 100vh;
 
-    <style>
-    {
-  background-image: url('images/ml.png');
-  background-size: cover;
+  background-image: url('images/ml.png'); /* palitan mo ng path ng image mo */
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  background-color: black;
 }
-</style>
 
 /* DARK OVERLAY para laging kita text */
 body::before {
