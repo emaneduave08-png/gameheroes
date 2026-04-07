@@ -79,7 +79,8 @@ p {
 }
 
 .content-wrapper p strong {
-  font-size: 20px;        /* mas malaki ang paragraph */
+  font-size: 22px;        /* mas malaki ang paragraph */
+  color: #ffcc00;
 }
 
     .counter-box {
