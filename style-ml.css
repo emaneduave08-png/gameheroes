@@ -143,16 +143,3 @@ a:hover {
   overflow-y: auto;
   text-align: left;
   
-.hero-profile {
-  display: flex;       /* para mag-side by side ang text at image */
-  align-items: center; /* vertical alignment */
-  gap: 15px;           /* space between name and image */
-  margin-bottom: 20px; /* space before hero info */
-}
-
-.profile-pic {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;  /* para maging bilog */
-  object-fit: cover;   /* para hindi ma-distort */
-}
