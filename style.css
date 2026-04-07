@@ -11,12 +11,6 @@ html, body {
   background-repeat: no-repeat;
   background-position: center;
 
-  /* Flexbox centering */
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* vertical center */
-  align-items: center;     /* horizontal center */
-}
 
 /* DARK OVERLAY para laging kita text */
 body::before {
