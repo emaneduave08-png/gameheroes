@@ -120,6 +120,7 @@ button.game-btn.active {
 #heroSearch:focus {
   border-color: #00aaff;
   box-shadow: 0 0 15px #00aaff, 0 0 30px #00aaff, 0 0 45px #00aaff;
+  transform: scale(1.05);
 }
 
 /* Suggestions dropdown */
@@ -143,6 +144,18 @@ button.game-btn.active {
 
 .suggestion:hover {
   background-color: #eee;
+}
+.back-link {
+  font-size: 24px;          /* mas malaking font */
+  color: #ffcc00;           /* optional: color change */
+  text-decoration: none;    
+  font-weight: bold;        /* para mas makapal */
+  transition: all 0.3s ease;
+}
+
+.back-link:hover {
+  color: #ffffff;           /* kulay kapag hover */
+  text-shadow: 0 0 8px #ffcc00; /* subtle glow effect */
 }
 
 /* Links */
