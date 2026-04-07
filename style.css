@@ -26,6 +26,15 @@ body::before {
   pointer-events: none;
 }
 
+  .container {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* center vertical */
+  align-items: center;     /* center horizontal */
+}
+  
 /* HEADER BOX */
 .header-box {
   display: inline-block;
