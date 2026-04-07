@@ -72,6 +72,16 @@ p {
   line-height: 1.6;
 }
 
+.content-wrapper h1 {
+  font-size: 48px;        /* mas malaking title */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black; /* para mas readable sa background */
+}
+
+.content-wrapper p {
+  font-size: 20px;        /* mas malaki ang paragraph */
+}
+
     .counter-box {
       display: inline-block;
       background-color: #ff4d4d; /* red for counter */
