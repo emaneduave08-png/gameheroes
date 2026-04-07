@@ -103,13 +103,23 @@ button.game-btn.active {
 
 /* Search input */
 #heroSearch {
-  width: 300px;
-  padding: 10px;
-  font-size: 16px;
-  margin-bottom: 5px;
-  border-radius: 5px;
-  border: none;
+  width: 400px;
+  padding: 15px 20px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
   outline: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  transition: all 0.3s ease; /* smooth effect */
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+/* Glow effect kapag naka-focus */
+#heroSearch:focus {
+  border-color: #00aaff;
+  box-shadow: 0 0 15px #00aaff, 0 0 30px #00aaff, 0 0 45px #00aaff;
 }
 
 /* Suggestions dropdown */
