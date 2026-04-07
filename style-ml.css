@@ -13,6 +13,12 @@ html, body {
   background-attachment: fixed;
 }
 
+@media (max-width: 800px) {
+  body {
+    background-size: contain;  /* makes full image visible on smaller screens */
+  }
+}
+
 /* DARK OVERLAY para laging kita text */
 body::before {
   content: "";
