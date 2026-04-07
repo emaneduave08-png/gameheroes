@@ -71,7 +71,38 @@ p {
   color: #ffcc00;            /* kulay ng text */
   line-height: 1.6;
 }
-  
+
+    .counter-box {
+      display: inline-block;
+      background-color: #ff4d4d; /* red for counter */
+      color: white;
+      padding: 8px 12px;
+      border-radius: 6px;
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+          .item-box {
+      display: inline-block;
+      background-color: #ff4d4d; /* red for counter */
+      color: white;
+      padding: 8px 12px;
+      border-radius: 6px;
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 16px;
+          }
+      .suggest-box {
+      display: inline-block;
+      background-color: #4da6ff; /* blue for suggested by */
+      color: white;
+      padding: 8px 12px;
+      border-radius: 6px;
+      margin: 5px 5px 5px 0;
+      font-weight: bold;
+      font-size: 16px;
+      }
+
 /* Buttons */
 button.game-btn {
   padding: 20px 40px;
