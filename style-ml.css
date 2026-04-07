@@ -57,11 +57,14 @@ p {
   text-shadow: 1px 1px 4px black;
 }
 .content-wrapper {
-  display: inline-block; /* para hindi affected ang background */
-  position: relative;    /* para text stacking */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* center exactly */
   text-align: center;
   padding: 20px;
-  background-color: rgba(0,0,0,0.0); 
+  z-index: 1; /* above overlay */
+}
   
 /* Buttons */
 button.game-btn {
