@@ -27,6 +27,7 @@ body::before {
   width: 100%;
   height: 100%;
   background:rgba(0, 0, 0, 0.35); /* adjust mo 0.4–0.7 */
+  background-size: 130%;
   z-index: -1; /* from -1 → 0 */
   pointer-events: none;
 }
