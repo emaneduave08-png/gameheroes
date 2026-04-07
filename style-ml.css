@@ -7,7 +7,7 @@ html, body {
   color: #fff;
   text-align: center;
   background-image: url('images/ml.png');
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
