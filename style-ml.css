@@ -12,11 +12,6 @@ html, body {
   background-position: top center;
   background-attachment: fixed;
 
-    /* Flexbox centering */
-  display: flex;
-  flex-direction: column;  /* para vertical stack */
-  justify-content: center; /* vertical center */
-  align-items: center;     /* horizontal center */
 }
 
 /* DARK OVERLAY para laging kita text */
