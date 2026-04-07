@@ -12,8 +12,6 @@ html, body {
   background-position: center;
   background-attachment: fixed;
 }
-@media (max-width: 800px)
-
 
 /* DARK OVERLAY para laging kita text */
 body::before {
