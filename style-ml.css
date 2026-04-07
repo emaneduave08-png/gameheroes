@@ -56,7 +56,13 @@ p {
   color: #eeeeee;
   text-shadow: 1px 1px 4px black;
 }
-
+.content-wrapper {
+  display: inline-block; /* para hindi affected ang background */
+  position: relative;    /* para text stacking */
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0,0,0,0.0); 
+  
 /* Buttons */
 button.game-btn {
   padding: 20px 40px;
