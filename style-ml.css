@@ -6,6 +6,12 @@ html, body {
   font-family: Arial, sans-serif;
   color: #fff;
   text-align: center;
+  background-image: url('images/ml.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
 
 /* DARK OVERLAY para laging kita text */
 body::before {
