@@ -39,7 +39,7 @@ body::before {
 
 /* TITLE */
 h1 {
-  font-size: 50px;
+  font-size: 60px; /* mas malaking title */
   color: #00aaff;
   text-shadow: 3px 3px 6px black, 0 0 10px #000;
   margin: 0;
@@ -47,7 +47,7 @@ h1 {
 
 /* SUBTITLE */
 h2 {
-  font-size: 28px;
+  font-size: 36px; /* mas malaking subtitle */
   color: #ffffff;
   text-shadow: 2px 2px 5px black;
 }
