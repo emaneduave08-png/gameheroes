@@ -78,7 +78,7 @@ p {
   text-shadow: 2px 2px 4px black; /* para mas readable sa background */
 }
 
-.content-wrapper p {
+.content-wrapper p strong {
   font-size: 20px;        /* mas malaki ang paragraph */
 }
 
