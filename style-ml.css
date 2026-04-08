@@ -87,6 +87,7 @@ p {
 .content-wrapper p {
   color: #ffcc00; /* Yellow */
   text-shadow: 3px 3px 8px black; /* Strong shadow for better contrast */
+  font-size: 22px;  
 }
 
     .counter-box {
