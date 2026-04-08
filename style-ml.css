@@ -84,6 +84,11 @@ p {
   color: #ffcc00;
 }
 
+.content-wrapper p {
+  color: #ffcc00; /* Yellow */
+  text-shadow: 3px 3px 8px black; /* Strong shadow for better contrast */
+}
+
     .counter-box {
       display: inline-block;
       background-color: #ff4d4d; /* red for counter */
